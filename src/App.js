@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import From from './Form';
 import { useState, useEffect } from 'react';
 
 function App() {
   const API_URL = "https://jsonplaceholder.typicode.com/";
-  const [req,type,setReqType] = useState("users");
+  const [reqType,setReqType] = useState("users");
   const [items, setItems] = useState([]);
   useEffect(() => {
    const fetchItems = async () => {
